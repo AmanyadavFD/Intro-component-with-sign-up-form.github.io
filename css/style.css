@@ -1,0 +1,184 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding:0;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	line-height: 1.5;
+	font-size: 16px;
+	color: #fff;
+}
+/*----------------------------------
+	Base Style
+------------------------------------*/
+h1{
+	font-weight: 600;
+}
+p{
+	font-size: 15px;
+}
+/*----------------------------------
+	Background-image and color
+------------------------------------*/
+body{
+	background:url(../images/bg-intro-mobile.png),#ff7978;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+/*----------------------------------
+	Layout style
+------------------------------------*/
+.container{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+/* For mobile phones: */
+.row::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+[class*="col-"] {
+	width: 100%;
+}
+/*----------------------------------
+	Content_here Style
+------------------------------------*/
+.content_here {
+	text-align: center;
+	padding: 80px 0
+}
+/*----------------------------------
+	Form Style
+------------------------------------*/
+.try_box{
+	background-color: hsl(248, 32%, 49%);
+	text-align: center;
+	padding: 20px 0;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 2px rgba(0, 0, 0, 0.35);
+}
+form{
+	background-color: #fff;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.35);
+    border-radius: 6px;
+    padding: 30px 25px;
+}
+input[type='text'],
+input[type='email'],
+input[type='password']{
+	width: 100%;
+	height: auto;
+	padding: 16px 12px;
+	margin-bottom: 15px;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #bbb;
+	font-weight: 600;
+  	color: #2d3436;
+  	font-size: 13px;
+}
+input[type='submit']{
+	width: 100%;
+	background-color: hsl(154, 59%, 51%);
+	color: #fff;
+	border:none;
+	border-radius: 5px;
+	padding: 16px 0;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-bottom: 4px solid hsl(154, 58%, 43%);
+}
+form > span{
+	font-size: 13px;
+	color: #bbb;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 8px;
+	display: block;
+}
+form > span > strong{
+	color: #ff7978;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-weight: 600;
+  color: #2d3436e0;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  
+}
+/* For desktop: */
+/*.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}*/
+@media(min-width: 1000px){
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	body{
+		background:url(../images/bg-intro-desktop.png),#ff7978;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		position: relative;
+		height: 100vh;
+	}
+	section{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 100%;
+		max-width: 1400px;
+	}
+	.container{
+		width: 85%;
+		margin: 0 auto;
+	}
+	.content_here {
+		text-align: left;
+		padding: 100px 0
+	}
+	.content_here h1{
+		font-size: 40px;
+		line-height: 1.1;
+		margin-bottom: 35px;
+	}
+	.form_section{
+		padding: 0 30px;
+	}
+
+}
