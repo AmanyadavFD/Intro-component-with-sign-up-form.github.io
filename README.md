@@ -1,5 +1,5 @@
 # Frontend Mentor - Intro component with sign up form
-
+<strong>https://amanyadavfd.github.io/Intro-component-with-sign-up-form.github.io/</strong>
 ![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
